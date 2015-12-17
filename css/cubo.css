@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+html, body {
+	width: 100%;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	background: black;
+	height: 100%;
+	padding: 0;
+	margin: 0
+}
+h1 {
+	color: white
+}
+h2 {
+	width: 46%;
+	font-weight: 300;
+	text-align: justify;
+	text-decoration: none;
+	padding: 20px 2% 0;
+	line-height: 18px;
+	font-size: 16px;
+	color: white
+}
+a {
+	color: white;
+	text-decoration: none;
+	padding: 0
+}
+div.cubo {
+	max-width: 500px;
+	position: relative;
+	margin: 0 auto;
+	width: 100%
+}
+div img {
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	top: 0
+}
+#cubo {
+	width: 50%;
+	height: 400px;
+	float: right
+}
+/* Cubo */
+#on { opacity: 0 }
+#on img.over { z-index: 10; opacity: 0 }
+#off img.over { z-index: 10; opacity: 0 }
+#on:hover, #off:hover { cursor: pointer }
+.pulse { -webkit-animation: pulse 4s ease-in-out infinite; -moz-animation: pulse 4s ease-in-out infinite; -ms-animation: pulse 4s ease-in-out infinite; animation: pulse 4s ease-in-out infinite }
+@-webkit-keyframes "pulse" { 0% { opacity: 0 } 5% { opacity: 1.0 } 10% { opacity: 0.3 } 14% { opacity: 1.0 } 80% { opacity: 0 } }
+@-moz-keyframes "pulse" { 0% { opacity: 0 } 5% { opacity: 1.0 } 10% { opacity: 0.3 } 14% { opacity: 1.0 } 80% { opacity: 0 } }
+@-ms-keyframes "pulse" { 0% { opacity: 0 } 5% { opacity: 1.0 } 10% { opacity: 0.3 } 14% { opacity: 1.0 } 80% { opacity: 0 } }
+@-o-keyframes "pulse" { 0% { opacity: 0 } 5% { opacity: 1.0 } 10% { opacity: 0.3 } 14% { opacity: 1.0 } 80% { opacity: 0 } }
+@keyframes "pulse" { 0% { opacity: 0 } 5% { opacity: 1.0 } 10% { opacity: 0.3 } 14% { opacity: 1.0 } 80% { opacity: 0 } }
+/* --- */
+#like {
+	display: none;
+	margin: 0 auto
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>#cuoredinapoli</title>
+<link href="css/cubo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<meta name="description" content="Il Festival del Bacio | Cuore di Napoli | #cuoredinapoli è una scultura antropologica relazionale firmata Nuove Tecnologie dell'Arte">
+<meta name="keywords" content="cuoredinapoli, festival del bacio, cuoredinapoli, nuove tecnologie dell'arte, napoli, mediaintegrati">
+<meta property="og:url" content="http://www.mediaintegrati.it/cuoredinapoli/cuoredinapoli.html" />
+<meta property="og:image" content="http://www.mediaintegrati.it/cuoredinapoli/img/fbimg.png" />
+<meta property="og:title" content="Festival del Bacio | #cuoredinapoli" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta property="og:type" content="website" />
+<meta name="language" content="IT">
+</head>
+
+<body>
+<h1>Cos'è e come parteripare a #cuoredinapoli</h1>
+<h2>Cos'è il #cuoredinapoli? #cuoredinapoli è la scultura antropologica-relazionale della Scuola di Nuove Tecnologie dell'Arte dell'Accademia di Belle Arti di Napoli. #cuoredinapoli è un simbolo, un segno sulla e della città, che riuscirà a far pulsare all'unisono tutti i cuori dei partecipanti. Si inserisce in un contenitore più ampio, chiamato Festival del Bacio che dopo le prime due edizioni del 2012 e 2013, tenute con altre modalità nell'incantevole cittadina di Sant'Agata de' Goti (BN), ha preso luogo a Napoli per due anni consecutivi nel marzo del 2014 e 2015.</h2>
+<h2>Come partecipare a #cuoredinapoli? Chiunque può partecipare alla scultura: basta pubblicare su Instagram la propria foto, con l'hashtag "#cuoredinapoli". Le immagini verranno istantaneamente caricate sull'home page del Festival del Bacio a Napoli, diventando parte integrante dell'opera e restando come traccia indelebile, nel flusso di foto visitabile dall'home page stessa.</h2>
+<h2>Cosa aspetti? Partecipa anche tu!</h2>
+<div id="cubo">
+  <div id="on" class="cubo"> <img src="img/on.png" class="pulse over" alt="pulsanteOn"/> <img src="img/on0.png" alt="pulsanteOnSopra" /> </div>
+  <div id="off" class="cubo"> <img src="img/off.png" class="pulse over" alt="pulsanteOff" /> <img src="img/off0.png"  alt="pulsanteOffSopra" /> </div>
+</div>
+<div id="like">
+  <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ffestivaldelbacio&amp;width=300&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=80&amp;appId=221644571315362" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:80px;" allowTransparency="true"></iframe>
+</div>
+<audio id="wow">
+  <source src="sound/wow.mp3">
+  </source>
+  <source src="sound/wow.ogg">
+  </source>
+</audio>
+<script type="text/javascript">
+var wow = $("#wow")[0];
+$("#off").mousedown(function() {
+    $(this).css("opacity", 0);
+	$("#on").css("opacity", 1);
+	wow.play();
+});
+$("#on").mouseup(function() {
+	$(this).css("opacity", 0);
+	$("#off").css("opacity", 1);
+});
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-39186908-4', 'mediaintegrati.it');
+	ga('send', 'pageview');
+</script>
+</body>
+</html>
